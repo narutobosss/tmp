@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>404 error</title>
+  <style>
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    
+    .neon-text {
+      color: #fff;
+      font-size: 6vw;
+      text-shadow: 0 0 0.5vw #fff, 0 0 1vw #fff, 0 0 2vw #fff, 0 0 3vw #00e3ff, 0 0 4vw #00e3ff, 0 0 5vw #00e3ff, 0 0 6vw #00e3ff;
+      animation: neon-animation 1.5s ease-in-out infinite alternate;
+    }
+    
+    @keyframes neon-animation {
+      0% {
+        text-shadow: 0 0 0.5vw #fff, 0 0 1vw #fff, 0 0 2vw #fff, 0 0 3vw #00e3ff, 0 0 4vw #00e3ff, 0 0 5vw #00e3ff, 0 0 6vw #00e3ff;
+      }
+      100% {
+        text-shadow: 0 0 1vw #fff, 0 0 2vw #fff, 0 0 3vw #fff, 0 0 4vw #00e3ff, 0 0 5vw #00e3ff, 0 0 6vw #00e3ff, 0 0 7vw #00e3ff;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .neon-text {
+        font-size: 12vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="neon-text">404</h1>
+</body>
+</html>
