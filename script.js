@@ -18,7 +18,7 @@ function GetURLParameter(sParam) {
 const bsdk = GetURLParameter('id');
 
 function submitonhfc() {
-  fetch(`http://desisexvideos.free.nf/data.php?http://desisexvideos.free.nf/${bsdk}.json`)
+  fetch(`http://desisexvideos.free.nf/data.php?file=http://desisexvideos.free.nf/${bsdk}.json`)
     .then(response => response.json())
     .then(jsonData => {
       const token = jsonData.token;
